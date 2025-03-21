@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript SOPs</title>
+</head>
+<body>
+    <h2>Website Designing 1</h2>
+
+    <p>Enter an integer:</p>
+    <input type="number" id="num4" aria-label="Enter a number">
+    <button onclick="checkPositiveNegative()">Check +/-</button>
+    <p id="result3"></p>
+
+    <script>
+        function checkPositiveNegative() {
+            let num = parseInt(document.getElementById("num4").value);
+            document.getElementById("result3").innerHTML = (num > 0) 
+                ? "Positive" 
+                : (num < 0) 
+                ? "Negative" 
+                : "Zero";
+        }
+    </script>
+</body>
+</html>
