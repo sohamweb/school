@@ -1,0 +1,120 @@
+
+<html>
+<head>
+    
+    <title>Kids Shopping Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: peachpuff;
+        }
+        h1 {
+            color: green;
+        }
+        .item {
+            background-color: Whi;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:pink;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Mens Shop !</h1>
+    <p>Click the button to add an item to the cart.</p>
+
+    <div class="item">
+        <p>🍒 Cherries- ₹696969</p>
+        <button onclick="addToCart('Balloon')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>▄︻デ══━一💥Gun - ₹Aukat Ke bahar</p>
+        <button onclick="addToCart('Teddy Bear')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>📸Camera- ₹150000</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>-🍫Yummy Choco Bar -$10000</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+
+    <div class="item">
+        <p> 🎁 Surprise Gift - ₹98000</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>- ₹🏓10453600</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+
+    <div class="item">
+        <p>🍰 Cake - ₹9470</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+
+
+    <div class="item">
+        <p>✒️ Magic Pen - ₹120000</p>
+        <button onclick="addToCart('Magic Pen')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>-🎰  ₹157000</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+
+    <div class="item">
+        <p🎮 Gaming Controller>- ₹505470</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>⌚ Watch- ₹200000</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+
+    <div class="item">
+        <p>-⚽​ Football ₹365340</p>
+        <button onclick="addToCart('Toy Car')">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p id="cartList">Cart is empty</p>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            let cart = document.getElementById("cartList");
+            if (cart.innerHTML === "Cart is empty") {
+                cart.innerHTML = item;
+            } else {
+                cart.innerHTML += ", " + item;
+            }
+        }
+    </script>
+
+</body>
+</html>
+
